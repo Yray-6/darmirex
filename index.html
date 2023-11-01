@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Darmirex</title>
+
+    <style>
+        body {
+    background-color: black;
+    color: white;
+    font-family:"Agbalumo" ;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+.none1{
+        display: none;
+    }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container px-3">
+        <h2 class="py-3 mt-2">Party with Darmirex</h2>
+        <h5 class="text-center">Get your tickets here!!</h5>
+        <h5 class="text-center">December 1st, 2023</h5>
+        <div class="row mt-5">
+            <div class="col-lg-6" data-aos="fade-up"  data-aos-duration="2000">
+                <div class="card" style="background-color: black;">
+                    <img src="images/wepik-darmirex2-20231101121551ErVB.png" class="card-img-top img-fluid cardi" alt="Event Flyer">
+                    <div class="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 none1" style="background-color: black;">
+                <div class="card">
+                    <img src="images/wepik-party-with-darmirex-copy-20231101121356NU3a.png" class="card-img-top img-fluid cardi" alt="Event Flyer">
+                    <div class="">
+                        <h5 class="">Event Flyer</h5>
+                    </div>
+                </div>
+            </div>
+                
+            
+            </div>
+            <h2>Ticket Prices</h2>
+                <p>"Grab Your Tickets Now!
+                    Join us for an unforgettable night at the December 1st Party Event. Secure your spot and dance the night away for just 2000 per ticket. Don't miss out on the excitement, laughter, and music that will make this night truly memorable. Hurry, tickets are limited! Purchase yours today and let the celebration begin!"</p>
+            <div class="row">
+                
+                <div data-aos="flip-left" class="card col-lg-4"  data-aos-duration="2000" style="background-color: black;">
+
+                    <img src="images/0.png" class="card-img-top" alt="Event Tickets">
+                    <div class="card-body">
+                        <h5 class="card-title">Regular Tickets</h5>
+                        <p class="card-text">Price: 3,000 per ticket</p>
+                        <a href="#" class="btn btn-danger btn-lg" onclick="sendWhatsAppMessage('Hello! I am interested in buying the regular tickets for the party event. Please send me more details.')">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4" data-aos="flip-left"  data-aos-duration="2000"  style="background-color: black;">
+                    <img src="images/1.png" class="card-img-top" alt="Event Tickets">
+                    <div class="card-body">
+                        <h5 class="card-title">VIP Tickets</h5>
+                        <p class="card-text">Price: 10,000 per ticket</p>
+                        <a href="#" class="btn btn-danger btn-lg" onclick="sendWhatsAppMessage('Hello! I am interested in buying the VIP tickets for the party event. Please send me more details.')">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4" data-aos="flip-left" data-aos-duration="2000" style="background-color: black;">
+                    <img src="images/2.png" class="card-img-top" alt="Event Tickets">
+                    <div class="card-body">
+                        <h5 class="card-title">Table for 3 Tickets</h5>
+                        <p class="card-text">Price: 50,000 per ticket</p>
+                        <a href="#" class="btn btn-danger btn-lg" onclick="sendWhatsAppMessage('Hello! I am interested in buying the Table for 3 tickets for the party event. Please send me more details.')">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</body>
+<script>
+    function sendWhatsAppMessage(message) {
+    var phoneNumber = '+2349053185647'; // Replace with the recipient's WhatsApp number
+    var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+    window.open(whatsappLink, '_blank');
+}
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>
