@@ -1,108 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Darmirex</title>
 
     <style>
-        body {
-    background-color: black;
-    color: white;
-    font-family:"Agbalumo" ;
-}
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("images/bg1.jpeg") center/cover fixed;
+        font-family: "Montserrat";
+        height: 100vh;
+        color: white; /* Set text color to contrast with the background */
+      }
 
-.card {
-    margin-bottom: 20px;
-}
+      /* Add a dark overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.9
+        ); /* Adjust the opacity here (0.5 is 50%) */
+      }
 
-@media (max-width: 768px) {
-.none1{
-        display: none;
-    }
-}
+      .card {
+        margin-bottom: 20px;
+      }
 
+      .carou {
+        height: 300px;
+        object-fit: contain;
+      }
 
+      @media (max-width: 768px) {
+        .none1 {
+          display: none;
+        }
 
+        .main {
+          font-size: 1.5em;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="container px-3">
-        <h2 class="py-3 mt-2">Party with Darmirex</h2>
-        <h5 class="text-center">Get your tickets here!!</h5>
-        <h5 class="text-center">December 1st, 2023</h5>
-        <div class="row mt-5">
-            <div class="col-lg-6" data-aos="fade-up"  data-aos-duration="2000">
-                <div class="card" style="background-color: black;">
-                    <img src="images/wepik-darmirex2-20231101121551ErVB.png" class="card-img-top img-fluid cardi" alt="Event Flyer">
-                    <div class="">
-                        
-                    </div>
-                </div>
+  <body>
+    <div class="container pb-5 mb-5 px-3" data-aos="fade-up">
+      <h2 class="py-3 main mt-2">Premium masked pool Party with Darmirex</h2>
+      <h5 class="mt-1">Get your tickets here!!</h5>
+      <h5 class="mt-1">5pm till dawn, December 1st, 2023</h5>
+      <h5 class="mt-2">Davvy Hotels, Okutukutu</h5>
+      <h5 class="mt-2">Gate Fee: FREE!</h5>
+      <div class="row mt-5">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+          <div class="card" style="background-color: black">
+            <img
+              src="images/mainposter.jpeg"
+              class="card-img-top img-fluid cardi"
+              alt="Event Flyer"
+            />
+            <div class=""></div>
+          </div>
+        </div>
+        <div class="col-lg-6 none1" style="background-color: black">
+          <div class="card">
+            <img
+              src="images/bg1.jpeg"
+              class="card-img-top img-fluid cardi"
+              alt="Event Flyer"
+            />
+            <div class="">
+              <h5 class="">Event Flyer</h5>
             </div>
-            <div class="col-lg-6 none1" style="background-color: black;">
-                <div class="card">
-                    <img src="images/wepik-party-with-darmirex-copy-20231101121356NU3a.png" class="card-img-top img-fluid cardi" alt="Event Flyer">
-                    <div class="">
-                        <h5 class="">Event Flyer</h5>
-                    </div>
-                </div>
-            </div>
-                
-            
-            </div>
-            <h2>Ticket Prices</h2>
-                <p>"Grab Your Tickets Now!
-                    Join us for an unforgettable night at the December 1st Party Event. Secure your spot and dance the night away for just 2000 per ticket. Don't miss out on the excitement, laughter, and music that will make this night truly memorable. Hurry, tickets are limited! Purchase yours today and let the celebration begin!"</p>
-            <div class="row">
-                
-                <div data-aos="flip-left" class="card col-lg-4"  data-aos-duration="2000" style="background-color: black;">
+          </div>
+        </div>
+      </div>
+      <h2 class="mt-5">Tickets</h2>
+      <p>
+        "Grab Your Tickets Now! Join us for an unforgettable night at the
+        December 1st Party Event. Don't miss out on the excitement, laughter,
+        and music that will make this night truly memorable. Hurry, tickets are
+        limited! Purchase yours today and let the celebration begin!"
+      </p>
+      <div class="row">
+        <div
+          data-aos="flip-left"
+          class="card col-lg-4"
+          data-aos-duration="2000"
+          style="background-color: black"
+        >
+          <img
+            src="images/ticket5.jpeg"
+            class="card-img-top"
+            alt="Event Tickets"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Table for 5 Tickets</h5>
+            <p class="card-text">Price: 50,000 per ticket</p>
+            <a
+              href="#"
+              class="btn btn-danger btn-lg"
+              onclick="sendWhatsAppMessage('Hello! I am interested in buying the regular tickets for the party event. Please send me more details.')"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <h2>Lots of Games</h2>
+        <p>Dive into the Night, Ignite the Glow! 🌙✨
 
-                    <img src="images/0.png" class="card-img-top" alt="Event Tickets">
-                    <div class="card-body">
-                        <h5 class="card-title">Regular Tickets</h5>
-                        <p class="card-text">Price: 3,000 per ticket</p>
-                        <a href="#" class="btn btn-danger btn-lg" onclick="sendWhatsAppMessage('Hello! I am interested in buying the regular tickets for the party event. Please send me more details.')">Buy Now</a>
-                    </div>
-                </div>
-                <div class="card col-lg-4" data-aos="flip-left"  data-aos-duration="2000"  style="background-color: black;">
-                    <img src="images/1.png" class="card-img-top" alt="Event Tickets">
-                    <div class="card-body">
-                        <h5 class="card-title">VIP Tickets</h5>
-                        <p class="card-text">Price: 10,000 per ticket</p>
-                        <a href="#" class="btn btn-danger btn-lg" onclick="sendWhatsAppMessage('Hello! I am interested in buying the VIP tickets for the party event. Please send me more details.')">Buy Now</a>
-                    </div>
-                </div>
-                <div class="card col-lg-4" data-aos="flip-left" data-aos-duration="2000" style="background-color: black;">
-                    <img src="images/2.png" class="card-img-top" alt="Event Tickets">
-                    <div class="card-body">
-                        <h5 class="card-title">Table for 3 Tickets</h5>
-                        <p class="card-text">Price: 50,000 per ticket</p>
-                        <a href="#" class="btn btn-danger btn-lg" onclick="sendWhatsAppMessage('Hello! I am interested in buying the Table for 3 tickets for the party event. Please send me more details.')">Buy Now</a>
-                    </div>
-                </div>
+            The stars are out, and so are we! Get ready for an electrifying night by the pool, where the water shimmers with the glow of excitement. Our Night Pool Party is not just an event  it's an immersion into a world of pulsating beats, dazzling lights, and endless euphoria. </p>
+        <h2 class="mt-5">Artists Performing</h2>
+        <p>
+          Get ready for an unforgettable night as our lineup of extraordinary
+          artists takes the stage, igniting the party with electrifying
+          performances that will keep you dancing until the break of dawn.
+        </p>
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-aos="zoom-in" data-aos-duration="2000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="images/performing1.jpeg"
+                class="d-block carou w-100"
+                alt="..."
+              />
             </div>
-        
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/performing2.jpeg"
+                class="d-block carou w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/performing3.jpeg"
+                class="d-block carou w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="images/performing4.jpeg"
+                  class="d-block carou w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="images/performing5.jpeg"
+                  class="d-block carou w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="images/performing6.jpeg"
+                  class="d-block carou w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="images/performing7.jpeg"
+                  class="d-block carou w-100"
+                  alt="..."
+                />
+              </div>
+          </div>
+          
+        </div>
+      </div>
+      <h2 class="my-5">Sponsors</h2>
+      <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-aos="zoom-in" data-aos-duration="2000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img
+            src="images/sponsor1.jpeg"
+            class="d-block carou w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img
+            src="images/sponsor2.jpeg"
+            class="d-block carou w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img
+            src="images/sponsor3.jpeg"
+            class="d-block carou w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+            <img
+              src="images/sponsor4.jpeg"
+              class="d-block carou w-100"
+              alt="..."
+            />
+          </div>
+         
+      </div>
+      
     </div>
-</body>
-<script>
+  </div>
+    </div>
+  </body>
+  <script>
     function sendWhatsAppMessage(message) {
-    var phoneNumber = '+2349053185647'; // Replace with the recipient's WhatsApp number
-    var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
-    window.open(whatsappLink, '_blank');
-}
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+      var phoneNumber = "+2349053185647"; // Replace with the recipient's WhatsApp number
+      var whatsappLink =
+        "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+      window.open(whatsappLink, "_blank");
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init();
   </script>
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>
